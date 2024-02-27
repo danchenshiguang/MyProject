@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>altitude</title>
+</head>
+<body>
+	<form action="url" method="post" id="saveData">
+		<span>经度</span>
+		<input type="text" name="i_longitude" id="i_longitude" value="${obj.longitude }" onKeyPress="if(event.keyCode!=46 && event.keyCode!=45 && event.keyCode<48 || event.keyCode>57) event.returnValue=false" />
+		<span>纬度</span>
+		<input type="text" name="i_latitude" id="i_latitude" value="${obj.latitude }" onKeyPress="if(event.keyCode!=46 && event.keyCode!=45 && event.keyCode<48 || event.keyCode>57) event.returnValue=false" />
+	</form>
+	<button class="save" onClick="doSave()">提交</button>
+
+	<script type="text/javascript">
+	function doSave() {
+		// 经度值判断i_longitude
+		var longitude = $("#i_longitude").val();
+		if (checkInputInt(longitude, -180, 180)) {
+			alert('请输入正确的经度，范围:-180~180');
+			return;
+		}
+		// 纬度值判断i_latitude
+		var latitude = $("#i_latitude").val();
+		if (checkInputInt(latitude, -90, 90)) {
+			alert('请输入正确的纬度，范围:-90~90');
+			return;
+		}
+		if(confirm("确认提交？")) {
+			$("#saveData").submit();
+		}
+	}
+	// -和.和数值范围判断
+	function checkInputInt(value, min, max) {
+		if (value.indexOf('-') != -1) {
+			if (value.indexOf('-') != 0) {
+				return true;
+			}
+			var hCount = (value.split('-')).length-1;
+			if (hCount > 1) {
+				return true;
+			}
+			if (value.indexOf('.') != -1) {
+				if (value.indexOf('.') == 1 || value.indexOf('.') > 4) {
+					return true;
+				}
+				var dCount = (value.split('.')).length-1;
+				if (dCount > 1) {
+					return true;
+				}
+			}
+		}
+		if (value.indexOf('.') != -1) {
+			if (value.indexOf('.') == 0 || value.indexOf('.') > 3) {
+				return true;
+			}
+			var dCount = (value.split('.')).length-1;
+			if (dCount > 1) {
+				return true;
+			}
+		}
+		if(parseInt(value) < min || parseInt(value) > max) {
+			return true;
+		}
+	}
+	</script>
+
+</body>
+</html>

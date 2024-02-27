@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Yelp Team02 Comment Analysis Platform</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="../static/css/animate.css">
+     <link rel="stylesheet" href="../static/css/owl.carousel.css">
+     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../static/css/lapus-style.css">
+    	<![endif]-->
+	<!-- The Fonts -->
+	<link href="http//fonts.googleapis.com/css?family=Oswald|Droid+Sans:400,700" rel="stylesheet" />
+	<!-- The Main CSS File -->
+	<link rel="stylesheet" href="../static/css/style.css" />
+	<!-- jQuery -->
+	<script src="../static/js/jQuery/jquery-1.7.2.min.js"></script>
+	<!-- Flot -->
+	<script src="../static/js/Flot/jquery.flot.js"></script>
+	<script src="../static/js/Flot/jquery.flot.resize.js"></script>
+	<script src="../static/js/Flot/jquery.flot.pie.js"></script>
+	<!-- DataTables -->
+	<script src="../static/js/DataTables/jquery.dataTables.min.js"></script>
+	<!-- ColResizable -->
+	<script src="../static/js/ColResizable/colResizable-1.3.js"></script>
+	<!-- jQuryUI -->
+	<script src="../static/js/jQueryUI/jquery-ui-1.8.21.min.js"></script>
+	<!-- Uniform -->
+	<script src="../static/js/Uniform/jquery.uniform.js"></script>
+	<!-- Tipsy -->
+	<script src="../static/js/Tipsy/jquery.tipsy.js"></script>
+	<!-- Elastic -->
+	<script src="../static/js/Elastic/jquery.elastic.js"></script>
+	<!-- ColorPicker -->
+	<script src="../static/js/ColorPicker/colorpicker.js"></script>
+	<!-- SuperTextarea -->
+	<script src="../static/js/SuperTextarea/jquery.supertextarea.min.js"></script>
+	<!-- UISpinner -->
+	<script src="../static/js/UISpinner/ui.spinner.js"></script>
+	<!-- MaskedInput -->
+	<script src="../static/js/MaskedInput/jquery.maskedinput-1.3.js"></script>
+	<!-- ClEditor -->
+	<script src="../static/js/ClEditor/jquery.cleditor.js"></script>
+	<!-- Full Calendar -->
+	<script src="../static/js/FullCalendar/fullcalendar.js"></script>
+	<!-- Color Box -->
+	<script src="../static/js/ColorBox/jquery.colorbox.js"></script>
+	<!-- Kanrisha Script -->
+	<script src="../static/js/kanrisha.js"></script>
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="../index.html" class="navbar-brand">Team02<span>-</span>Yelp</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#home" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About</a></li>
+                         <li><a href="#team" class="smoothScroll">Team</a></li>
+                         <li><a href="#menu" class="smoothScroll">Main function</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Welcome to Yelp-Team02! <i class="fa fa-phone"></i> +010 123 1234</a></li>
+                         <a href="#footer" class="section-btn">Sign in/Sign up</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>It is relevant to your life</h3>
+                                             <h1>Our mission is to provide an unforgettable experience</h1>
+                                             <a href="/session_user" class="section-btn btn btn-default smoothScroll">Meet our customer page</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-second">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>Business's best partner</h3>
+                                             <h1>Provide effective data analysis and business strategy</h1>
+                                             <a href="/business_session" class="section-btn btn btn-default smoothScroll">Meet our Business page</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+          </div>
+     </section>
+     <!-- ABOUT -->
+     <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                   <h4>Read our story</h4>
+                                   <h2>We are Team 02 from College of Life Science, Sichuan University</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>We develop an intelligent review system platform based on big data.</p>
+                                   <p>For customers and businesses to provide a choice of high-quality services, choose us, your quality of life will improve a lot. You can use this platform for your breakfast or restaurant. Please tell your friends about us. Thank you.</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                              <img src="../static/images/about-image.jpg" class="img-responsive" alt="">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- Main Function-->
+     <section id="Main Function" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Our Main Function</h2>
+                              <h4>Customer &amp; Business</h4>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- Function THUMB -->
+                         <div class="menu-thumb">
+                              <a href="../static/images/menu-image1.jpg" class="image-popup" title="American Breakfast">
+                                   <img src="../static/images/menu-image1.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>XXXXXXX</h3>
+                                             <p>XXXXXXXXXX</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>For Customer</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- Function THUMB -->
+                         <div class="menu-thumb">
+                              <a href="../static/images/menu-image2.jpg" class="image-popup" title="Self-made Salad">
+                                   <img src="../static/images/menu-image2.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>XXX</h3>
+                                             <p>XXXXXXXX</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>For customer</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- Function THUMB -->
+                         <div class="menu-thumb">
+                              <a href="../static/images/menu-image3.jpg" class="image-popup" title="Chinese Noodle">
+                                   <img src="../static/images/menu-image3.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>XXXXXX</h3>
+                                             <p>XXXX</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>For customer</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- Function THUMB -->
+                         <div class="menu-thumb">
+                              <a href="../static/images/menu-image4.jpg" class="image-popup" title="Rice Soup">
+                                   <img src="../static/images/menu-image4.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>xxxxx</h3>
+                                             <p>xxxxxx</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>For business</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- Function THUMB -->
+                         <div class="menu-thumb">
+                              <a href="../static/images/menu-image5.jpg" class="image-popup" title="Project title">
+                                   <img src="../static/images/menu-image5.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>xxxxxx</h3>
+                                             <p>xxxxxxxx</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>For business</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- Function THUMB -->
+                         <div class="menu-thumb">
+                              <a href="../static/images/menu-image6.jpg" class="image-popup" title="Project title">
+                                   <img src="../static/images/menu-image6.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>xxxxxx</h3>
+                                             <p>xxxx</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>For business</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+
+               </div>
+          </div>
+     </section>
+     <!-- table wrapper-->
+	<div class="wrapper contents_wrapper">
+
+		<aside class="sidebar">
+			<ul class="tab_nav">
+				<li class="i_32_dashboard">
+					<a href="/user_recommend" title="General Info">
+						<span class="tab_label">Dashboard</span>
+
+					</a>
+				</li>
+				<li class="i_32_inbox">
+					<a href="/user_recommend_1" title="Your Messages">
+						<span class="tab_label">Inbox</span>
+
+					</a>
+				</li>
+				<li class="i_32_charts">
+					<a href="/user_recommend_2" title="Visual Data">
+						<span class="tab_label">Charts</span>
+
+					</a>
+				</li>
+				<li class="i_32_ui">
+					<a href="/user_recommend_3" title="Kit elements">
+						<span class="tab_label">UI</span>
+
+					</a>
+				</li>
+				<li class="active_tab i_32_tables">
+					<a href="/user_recommend_4" title="Some Rows">
+						<span class="tab_label">Tables</span>
+
+					</a>
+				</li>
+				<li class="i_32_forms">
+					<a href="/user_recommend_5" title="Some Fields">
+						<span class="tab_label">Forms</span>
+
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+		<div class="contents">
+			<div class="grid_wrapper">
+
+				<div class="g_6 contents_header">
+					<h3 class="i_16_table tab_label">review Tables</h3>
+					<div><span class="label">some review filter</span></div>
+				</div>
+				<div class="g_6 contents_options">
+					<div class="simple_buttons">
+						<div class="bwIcon i_16_help">Help</div>
+					</div>
+					<div class="simple_buttons">
+						<div class="bwIcon i_16_settings">Settings</div>
+						<div class="buttons_arrow">
+							<!-- Drop Menu -->
+							<ul class="drop_menu menu_with_icons right_direction">
+								<li>
+									<a class="i_16_add" href="#" title="New Flie">
+										<span class="label">New File</span>
+									</a>
+								</li>
+								<li>
+									<a class="i_16_progress" href="#" title="2 Files Left">
+										<span class="label">Files Left</span>
+										<span class="small_count">2</span>
+									</a>
+								</li>
+								<li>
+									<a class="i_16_files" href="#" title="Browse Files">
+										<span class="label">Browse Files</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="g_12 separator"><span></span></div>
+                <!--sort-table -->
+                <div class="widget_contents noPadding twCheckbox">
+						<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+                            <div class="dtTop">
+                                <div class="dtShowPer">
+                                    <div id="DataTables_Table_0_length" class="dataTables_length">
+                                        <label>Show entries
+                                            <div class="selector" id="uniform-undefined">
+                                                <span>10</span>
+                                                <select size="1" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" style="opacity: 0;">
+                                                    <option value="10" selected="selected">10</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="dtFilter">
+                                     <form action="/" enctype='multipart/form-data' method='POST'>
+                                            <input name="file_path" type="text" >
+                                    <input type="submit" value="filter" class="button-new" style="margin-top:20px;"/>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="dtTables">
+                                <table class="tables datatable noObOLine dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                                    <thead>
+								        <tr role="row">
+                                            <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+                                                : activate to sort column descending" style="width: 19.2px;">
+										        <div class="checker" id="uniform-undefined">
+                                                    <span>
+                                                        <input type="checkbox" class="simple_form tMainC" style="opacity: 0;">
+                                                    </span>
+                                                </div>
+									        </th>
+                                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ID: activate to sort column ascending" style="width: 91.4px;">user_id</th>
+                                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending" style="width: 401.4px;">stars_count</th>
+                                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Priority: activate to sort column ascending" style="width: 88.4px;">stars_avg</th>
+                                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 74.2px;">loyal_star</th>
+                                        </tr>
+							        </thead>
+                                    <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                        <tr class="status_open odd">
+                                            <td class="  sorting_1">
+                                                <div class="checker" id="uniform-undefined">
+                                                    <span><input type="checkbox" class="simple_form" style="opacity: 0;"></span>
+                                                </div>
+                                            </td>
+{#                                                 <td class=" ">{{ data['user_id'][0]|safe }}</td>#}
+{#					                            <td class=" ">{{ data['stars_count'][0]|safe }}</td>#}
+{#                                                <td class=" ">{{ data['stars_avg'][0]|safe }}</td>#}
+{#                                                <td class=" ">{{ data['loyal_star'][0] |safe}}</td>#}
+                                        </tr>
+                                        <tr class="status_open odd">
+                                            <td class="  sorting_1">
+                                                <div class="checker" id="uniform-undefined">
+                                                    <span><input type="checkbox" class="simple_form" style="opacity: 0;"></span>
+                                                </div>
+                                            </td>
+{#                                                 <td class=" ">{{ data['user_id'][1]|safe }}</td>#}
+{#					                            <td class=" ">{{ data['stars_count'][1]|safe }}</td>#}
+{#                                                <td class=" ">{{ data['stars_avg'][1]|safe }}</td>#}
+{#                                                <td class=" ">{{ data['loyal_star'][1] |safe}}</td>#}
+                                        </tr>
+                                        <tr class="status_open odd">
+                                            <td class="  sorting_1">
+                                                <div class="checker" id="uniform-undefined">
+                                                    <span><input type="checkbox" class="simple_form" style="opacity: 0;"></span>
+                                                </div>
+                                            </td>
+{#                                                 <td class=" ">{{ data['user_id'][3]|safe }}</td>#}
+{#					                            <td class=" ">{{ data['stars_count'][3]|safe }}</td>#}
+{#                                                <td class=" ">{{ data['stars_avg'][3]|safe }}</td>#}
+{#                                                <td class=" ">{{ data['loyal_star'][3] |safe}}</td>#}
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="dtBottom">
+                                <div class="dtInfo">
+                                    <div class="dataTables_info" id="DataTables_Table_0_info">Showing 1 to 10 of 10 entries</div>
+                                </div>
+                                <div class="dtPagination">
+                                    <div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_0_paginate">
+                                        <a tabindex="0" class="first paginate_button paginate_button_disabled" id="DataTables_Table_0_first">First
+                                        </a>
+                                        <a tabindex="0" class="previous paginate_button paginate_button_disabled" id="DataTables_Table_0_previous">Previous
+                                        </a>
+                                        <span><a tabindex="0" class="paginate_active">1</a>
+                                        </span>
+                                        <a tabindex="0" class="next paginate_button paginate_button_disabled" id="DataTables_Table_0_next">Next
+                                        </a>
+                                        <a tabindex="0" class="last paginate_button paginate_button_disabled" id="DataTables_Table_0_last">Last
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Separator -->
+				<div class="g_12 separator"><span></span></div>
+                 表格
+                <div class="g_12 separator"><span></span></div>
+            </div>
+		</div>
+	</div>
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="../static/js/jquery.js"></script>
+     <script src="../static/js/bootstrap.min.js"></script>
+     <script src="../static/js/jquery.stellar.min.js"></script>
+     <script src="../static/js/wow.min.js"></script>
+     <script src="../static/js/owl.carousel.min.js"></script>
+     <script src="../static/js/jquery.magnific-popup.min.js"></script>
+     <script src="../static/js/smoothscroll.js"></script>
+     <script src="../static/js/custom.js"></script>
+
+</body>
+</html>
